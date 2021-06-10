@@ -32,3 +32,9 @@ This is a **lightweight PHP webshell**, using only vanilla JavaScript and CSS, _
 #### Exploring logs
 
 ![Screenshot File Upload](https://i.imgur.com/4yD7f7d.png)
+
+## Disclaimer
+
+This repository is for educationnal purposes only.
+Malicious usage of this repository will not hold the author responsible.
+Do not pentest without explicit permissions.
