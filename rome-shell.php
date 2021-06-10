@@ -4,7 +4,8 @@
 
 
     if($pass != null) {
-        if (isset($_COOKIE['pass'])) {
+        if (isset($_COOKIE['pass'])) { // We use cookies and not url parameter for security reasons
+            // As it is likely that URL parameters are logged by the webserver, thus revealing the password
             if (md5($_COOKIE['pass']) !== $pass) {
                 echo "Wrong password !";
                 exit;
@@ -17,6 +18,7 @@
 ?>
 
 <?php
+    // Upload file to the server
     if (isset($_POST['upload'])) {
         $desinationDir = getDir();
         $destinationFile = $desinationDir.'/'.basename($_FILES['file']['name']);
