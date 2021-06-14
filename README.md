@@ -18,7 +18,7 @@ This is a **lightweight PHP webshell**, using only vanilla JavaScript and CSS, _
 
 ## How to use
 
-0. (Optionnal) Add a password: set the `$pass` variable to the **MD5 string** of your password
+0. (Optionnal) Add a password: set the `$pass` variable to the **SHA512 string** of your password
 1. Find a way to upload the file to a webserver
 2. Access it through your browser
 3. Enjoy ! Explore files, executes commands and more !

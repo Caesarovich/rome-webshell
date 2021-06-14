@@ -12,13 +12,13 @@
 
 <?php
     // Password protection, useful for King of The Hill games
-    $pass=''; // Set to null to disable; Set to string to enable, must be the md5 hash of the password.
+    $pass=''; // Set to null to disable; Set to string to enable, must be the sha512 hash of the password.
 
 
     if($pass != null) {
         if (isset($_COOKIE['pass'])) { // We use cookies and not url parameter for security reasons
             // As it is likely that URL parameters are logged by the webserver, thus revealing the password
-            if (md5($_COOKIE['pass']) !== $pass) {
+            if (hash('sha512', $_COOKIE['pass']) !== $pass) {
                 echo "Wrong password !";
                 exit;
             }
